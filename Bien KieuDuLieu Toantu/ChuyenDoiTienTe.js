@@ -4,7 +4,7 @@ let FromCur = document.getElementById("from").value
     let AmountMoney = parseInt(document.getElementById("amount").value)
 
     let DoiTien;
-    if (FromCur === "VND" && ToCur === ""USD){
+    if (FromCur === "VND" && ToCur === "USD"){
         KetQua = AmountMoney/23000
     }else if (FromCur === "USD" && ToCur === "VND"){
         KetQua = AmountMoney*23000
