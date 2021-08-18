@@ -1,7 +1,7 @@
 function PhepCong(){
     let number1= parseInt(document.getElementById("number1").value)
     let number2= parseInt(document.getElementById("number2").value)
-let KetQua= number1 + number2
+    let KetQua= number1 + number2
     document.getElementById("KetQua").innerHTML="Ket Qua La" + KetQua
 }
 
