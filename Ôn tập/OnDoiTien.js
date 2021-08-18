@@ -1,16 +1,14 @@
 function DoiTien(){
-    let fromcur = document.getElementById("from").value;
-    let tocur = document.getElementById("to").value;
-    let amountmoney = parseInt(document.getElementById("amount").value);
-    let DoiTien;
-    if(fromcur === "VND" && tocur === "USD"){
-        KetQua = amountmoney/23000
-    } else if(fromcur === "USD" && tocur=== "VND"){
-        KetQua = amountmoney*23000
-    } else {
-        KetQua = amountmoney
-    }
-    document.getElementById("KetQua").innerHTML = "Ket qua la" + KetQua
+    let from = document.getElementById("from").value;
+    from=parseInt(from)
+    let to = document.getElementById("to").value;
+    to=parseInt(to)
+    let amount = document.getElementById("amount").value;
+    amount=parseInt(amount)
+
+KetQua=amount*from/to
+
+    document.getElementById("KetQua").innerHTML = "Ket qua la" + KetQua;
 }
 
 
