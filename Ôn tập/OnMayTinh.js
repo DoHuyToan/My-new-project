@@ -1,6 +1,8 @@
-function PhepCong(){
-    let So1= parseInt(document.getElementById("number1").value);
-    let So2= parseInt(document.getElementById("number2").value);
-    let KetQua= So1+So2
-    document.getElementById("KetQua").innerHTML = "Ket qua la" + KetQua
+function Cong(){
+    let num1= document.getElementById("num1").value;
+    num1=parseInt(num1);
+    let num2= document.getElementById("num2").value;
+    num2=parseInt(num2);
+    let KetQua= num1 + num2;
+    document.getElementById("KetQua").innerText = KetQua;
 }
