@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = prompt("Điền số?",0)
+  num = parseInt(num)
+  switch (num>0) {
+      case (true):
+          alert(1);
+          break;
+      case (false):
+          switch (num < 0) {
+              case (true):
+                  alert(-1);
+                  break;
+              case (false):
+                  alert(0);
+                  break;
+              default:
+                  break;
+          }
+      default:
+          break;
+  }
+</script>
+</body>
+</html>
