@@ -10,11 +10,11 @@
     let HoaHong=0;
 
     if (DoanhSo<50000000) {
-        HoaHong = DoanhSo * 0.005
-    } else if (DoanhSo <100000000) {
         HoaHong = DoanhSo * 0.01
+    } else if (DoanhSo <100000000) {
+        HoaHong = DoanhSo * 0.025
     } else {
-        HoaHong = DoanhSo * 0.03
+        HoaHong = DoanhSo * 0.05
     }
 
     alert("Hoa hồng là: " + HoaHong + " VND")
