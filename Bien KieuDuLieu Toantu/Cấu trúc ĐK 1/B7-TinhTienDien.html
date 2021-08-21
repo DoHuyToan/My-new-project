@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let SoDien=parseInt(prompt("Số điện đã dung (kWh): "))
+    let ThanhTien=0;
+
+    if (SoDien<1000) {
+        ThanhTien = SoDien * 2000
+    } else if (SoDien <3000) {
+        ThanhTien = SoDien * 3000
+    } else {
+        ThanhTien = SoDien * 5000
+    }
+
+    alert("Thành tiền là: " + ThanhTien + " VND")
+</script>
+</body>
+</html>
