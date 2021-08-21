@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let DoanhSo=parseInt(prompt("Doanh thu bán hàng (VND): "))
+    let HoaHong=0;
+
+    if (DoanhSo<50000000) {
+        HoaHong = DoanhSo * 0.005
+    } else if (DoanhSo <100000000) {
+        HoaHong = DoanhSo * 0.01
+    } else {
+        HoaHong = DoanhSo * 0.03
+    }
+
+    alert("Hoa hồng là: " + HoaHong + " VND")
+</script>
+</body>
+</html>
