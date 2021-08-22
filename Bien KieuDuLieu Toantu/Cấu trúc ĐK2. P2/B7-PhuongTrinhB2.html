@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = parseInt(prompt("Phương trình ax^2 + bx +c = 0 có a= "))
+  let b = parseInt(prompt("Phương trình ax^2 + bx +c = 0 có b= "))
+  let c = parseInt(prompt("Phương trình ax^2 + bx +c = 0 có c= "))
+  let x
+
+  if (a===0){
+      if (b===0){
+          alert ("Phương trình vô nghiệm")
+      }else {
+          x = (-b)/c
+          alert("Nghiệm x = " + x)
+      }
+  } else {
+      let delta = (b^2) - (4*a*c)
+      let x1
+      let x2
+
+      if (delta>0){
+          x1 =((-b)+Math.sqrt(delta))/(2*a)
+          x2 = ((-b)-Math.sqrt(delta))/(2*a)
+          alert("Phương trình có 2 nghiệm: x1 = " + x1 + "; x2 = " + x2)
+      } else if (delta===0){
+          x1 = (-b)/(2*a)
+          alert("Phương trình có nghiệm kép là x1 = x2 = " +x1)
+      } else {
+          alert("Phương trình vô nghiệm")
+      }
+  }
+</script>
+</body>
+</html>

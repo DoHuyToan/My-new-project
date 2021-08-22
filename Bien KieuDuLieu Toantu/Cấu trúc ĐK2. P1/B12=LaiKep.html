@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let TienGoc = parseInt(prompt("Số tiền gốc vay: "))
+  let LaiSuat = parseInt(prompt("Lãi vay (tháng): "))
+  let Sothang = parseInt(prompt("Số tháng đã vay: "))
+  let TienLai = TienGoc*(1+LaiSuat)^Sothang
+
+  alert("Tiền lãi là: " + TienLai)
+</script>
+</body>
+</html>

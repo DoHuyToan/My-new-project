@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let ThuNhap = parseInt(prompt("Thu nhập hàng tháng (triệu): "))
+  let Thue
+
+  if (ThuNhap<9){
+      alert ("Chưa được đóng thuế thu nhập")
+  } else if (ThuNhap<10){
+      Thue = ThuNhap * 0.05
+      alert("Thuế thu nhập là: " + Thue)
+  } else  if (ThuNhap<15){
+      Thue = ThuNhap * 0.08
+      alert("Thuế thu nhập là: " + Thue)
+  } else if (ThuNhap<20){
+      Thue = ThuNhap * 0.1
+      alert("Thuế thu nhập là: " + Thue)
+  } else if (ThuNhap<50){
+      Thue = ThuNhap * 0.15
+      alert("Thuế thu nhập là: " + Thue)
+  } else if (ThuNhap<100){
+      Thue = ThuNhap * 0.3
+          alert("Thuế thu nhập là: " + Thue)
+  } else {
+      Thue = ThuNhap * 0.5
+      alert("Thuế thu nhập là: " + Thue)
+  }
+</script>
+</body>
+</html>
