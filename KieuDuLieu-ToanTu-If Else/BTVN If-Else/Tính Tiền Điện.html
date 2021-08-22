@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label for = "SoCu"> Số điện cũ (kwh) </label>
+    <input type="text" id="SoCu">
+    <label for="SoMoi"> Số điện mới (kWh) </label>
+    <input type="text" id="SoMoi">
+    <input type="button" value="Tiền điện" onclick="TienDien()">
+    <p id="KetQua"></p>
+<script>
+    function TienDien() {
+        let SoCu = parseInt(document.getElementById('SoCu').value)
+        let SoMoi = parseInt(document.getElementById('SoMoi').value)
+        let num = SoMoi - SoCu;
+
+        if (num<51){
+            let B1 = num * 1673
+            document.getElementById("KetQua").innerText='Tiền điện là: ' + B1 +'VNĐ';
+        }else {
+            if (num<101) {
+                let B2 = num * 1734
+                document.getElementById("KetQua").innerText='Tiền điện là: ' + B2 +'VNĐ';
+            }
+            else {
+                if (num<201) {
+                    let B3 = num * 2014
+                    document.getElementById("KetQua").innerText='Tiền điện là: ' + B3 +'VNĐ';
+                }
+                else {
+                    if (kwh<301) {
+                        let B4 = num * 2536
+                        document.getElementById("KetQua").innerText='Tiền điện là: ' + B4 +'VNĐ';
+                    }
+                    else {
+                        if (kwh<401) {
+                            let B5 = num * 2834
+                            document.getElementById("KetQua").innerText='Tiền điện là: ' + B5 +'VNĐ';
+                        }
+                        else {
+                            let B6 = num * 2927
+                            document.getElementById("KetQua").innerText='Tiền điện là: ' + (kwh*2927)+'VNĐ';
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

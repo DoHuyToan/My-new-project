@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="Ngay"> Số ngày công </label>
+<input type="text" id="Ngay">
+<select id="Bac">
+  <option value="A"> A </option>
+  <option value="B"> B </option>
+  <option value="C"> C </option>
+  <option value="D"> D </option>
+</select>
+<input type="button" value="Tiền lương thực nhận" onclick="TienLuong()">
+<p id="KQ"></p>
+<script>
+  function TienLuong(){
+    let Ngay = parseInt(document.getElementById("Ngay").value);
+    let Bac = document.getElementById("Bac").value;
+
+    switch (Bac) {
+      case 'A' :
+        document.getElementById("KQ").innerText='Lương nhận được là : ' + (5000000*Ngay/22)+'.VNĐ';
+        break;
+      case 'B' :
+        document.getElementById("KQ").innerText='Lương nhận được là : ' + (6000000*Ngay/23)+'.VNĐ';
+        break;
+      case 'C' :
+        document.getElementById("KQ").innerText='Lương nhận được là : ' + (8000000*Ngay/23)+'.VNĐ';
+        break;
+      case 'D' :
+        document.getElementById("KQ").innerText='Lương nhận được là : ' + (10000000*Ngay/23)+'.VNĐ';
+        break;
+    }
+  }
+</script>
+</body>
+</html>
