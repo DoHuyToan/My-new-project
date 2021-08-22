@@ -9,7 +9,7 @@
   let TienGoc = parseInt(prompt("Số tiền gốc vay: "))
   let LaiSuat = parseInt(prompt("Lãi vay (tháng): "))
   let Sothang = parseInt(prompt("Số tháng đã vay: "))
-  let TienLai = TienGoc*(1+LaiSuat)^Sothang
+  let TienLai = TienGoc * Math.pow((1+LaiSuat), Sothang*Sothang)
 
   alert("Tiền lãi là: " + TienLai)
 </script>
