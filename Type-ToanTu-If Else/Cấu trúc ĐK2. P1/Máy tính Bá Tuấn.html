@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4"><input type="text" id="display" ></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="1" value="1" onclick="show(value)"></td>
+    <td><input type="button" name="2" value="2" onclick="show(value)"></td>
+    <td><input type="button" name="3" value="3" onclick="show(value)"></td>
+    <td><input type="button" name="+" value="+" onclick="show(value)"></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="4" value="4" onclick="show(value)"></td>
+    <td><input type="button" name="5" value="5" onclick="show(value)"></td>
+    <td><input type="button" name="6" value="6" onclick="show(value)"></td>
+    <td><input type="button" name="-" value="-" onclick="show(value)"></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="7" value="7" onclick="show(value)"></td>
+    <td><input type="button" name="8" value="8" onclick="show(value)"></td>
+    <td><input type="button" name="9" value="9" onclick="show(value)"></td>
+    <td><input type="button" name="*" value="*" onclick="show(value)"></td>
+  </tr>
+  <tr>
+    <td><input type="button" name="AC" value="AC" onclick="ac()"></td>
+    <td><input type="button" name="0" value="0" onclick="show(value)"></td>
+    <td><input type="button" name="=" value="=" onclick="calculator()"></td>
+    <td><input type="button" name="/" value="/" onclick="show(value)"></td>
+  </tr>
+</table>
+<script>
+function show(value) {
+document.getElementById("display").value+=value;
+}
+function calculator() {
+document.getElementById("display").value= eval(document.getElementById("display").value);
+}
+function ac() {
+document.getElementById("display").value="";
+}
+</script>
+</body>
+</html>

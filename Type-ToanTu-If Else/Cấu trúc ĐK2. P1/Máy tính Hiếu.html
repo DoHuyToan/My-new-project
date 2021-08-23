@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4"><input type="text" id ="result"></td>
+
+  </tr>
+  <tr>
+    <td><input type="button" value="1" onclick="btn('1')"/> </td>
+    <td><input type="button" value="2" onclick="btn('2')"/> </td>
+    <td><input type="button" value="3" onclick="btn('3')"/> </td>
+    <td><input type="button" value="/" onclick="cal('/')"/> </td>
+  </tr>
+  <tr>
+    <td><input type="button" value="4" onclick="btn('4')"/> </td>
+    <td><input type="button" value="5" onclick="btn('5')"/> </td>
+    <td><input type="button" value="6" onclick="btn('6')"/> </td>
+    <td><input type="button" value="-" onclick="cal('-')"/> </td>
+  </tr>
+  <tr>
+    <td><input type="button" value="7" onclick="btn('7')"/> </td>
+    <td><input type="button" value="8" onclick="btn('8')"/> </td>
+    <td><input type="button" value="9" onclick="btn('9')"/> </td>
+    <td><input type="button" value="+" onclick="cal('+')"/> </td>
+  </tr>
+  <tr>
+    <td><input type="button" value="C" onclick="clr()"/> </td>
+    <td><input type="button" value="0" onclick="btn('0')"/> </td>
+    <td><input type="button" value="=" onclick="solve()"/> </td>
+    <td><input type="button" value="*" onclick="cal('*')"/> </td>
+  </tr>
+</table>
+<script>
+  let num1=0
+  let com=""
+
+
+  function btn(val)
+  {
+    document.getElementById("result").value+=val
+  }
+
+  function cal(val){
+    num1 = parseFloat(document.getElementById("result").value)
+    document.getElementById("result").value = ""
+    com=val
+  }
+
+  function solve()
+  {
+    let num2 = parseFloat(document.getElementById("result").value)
+    if (com==="+") {
+      let result = num1+num2
+      document.getElementById("result").value = result.toFixed(2)
+    } else if (com==="-") {
+      let result = num1 - num2
+      document.getElementById("result").value = result.toFixed(2)
+    } else if (com==="*") {
+      let result = num1*num2
+      document.getElementById("result").value = result.toFixed(2)
+    } else if (com==="/"){
+      let result = num1/num2
+      document.getElementById("result").value = result.toFixed(2)
+    }
+
+
+  }
+  function clr() {
+    document.getElementById("result").value = ""
+  }
+</script>
+</body>
+</html>
