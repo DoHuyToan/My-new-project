@@ -34,13 +34,14 @@
         <td> <input type="button" value="=" onclick="ketQua()"></td>
         <td> <input type="button" value="/" onclick="phepToan(this)"></td>
     </tr>
-
+<!--    this ở đây là để mỗi lần bấm nó sẽ nhận giá trị ở value-->
 </table>
 </form>
 <script>
     function phepToan(num){
         document.getElementById("result").value += num.value
     }
+// hàm này lấy giá trị từ document.getElementById("result").value = document.getElementById("result").value + num.value
 
     function ketQua() {
         let ketqua = document.getElementById("result").value
