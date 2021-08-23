@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<table>
+    <tr>
+        <td colspan="4"> <input type="text" id="result"> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="1" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="2" onclick="phepToan(this)"> </td>
+        <td> <input type="button" value="3" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="+" onclick="phepToan(this)"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="4" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="5" onclick="phepToan(this)"> </td>
+        <td> <input type="button" value="6" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="-" onclick="phepToan(this)"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="7" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="8" onclick="phepToan(this)"> </td>
+        <td> <input type="button" value="9" onclick="phepToan(this)"></td>
+        <td> <input type="button" value="*" onclick="phepToan(this)"></td>
+    </tr>
+    <tr>
+        <td> <input type="reset" value="C"></td>
+        <td> <input type="button" value="0" onclick="phepToan(this)"> </td>
+        <td> <input type="button" value="=" onclick="ketQua()"></td>
+        <td> <input type="button" value="/" onclick="phepToan(this)"></td>
+    </tr>
+
+</table>
+</form>
+<script>
+    function phepToan(num){
+        document.getElementById("result").value += num.value
+    }
+
+    function ketQua() {
+        let ketqua = document.getElementById("result").value
+        let tinhtoan = eval(ketqua)
+        document.getElementById("result").value = tinhtoan
+    }
+</script>
+</body>
+</html>
