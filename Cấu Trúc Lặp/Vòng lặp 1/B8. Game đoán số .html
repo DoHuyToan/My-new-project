@@ -13,9 +13,10 @@
         let num = Math.floor(Math.random() * (max - min)) + min;
         // Mathfloor là làm tròn, Mathrandom nó sẽ random trong khoảng từ min đến max
         let i = 1;
+        let Doan = null;
 
         do {
-            let Doan = parseInt(prompt("Số bạn đoán: "));
+            Doan = parseInt(prompt("Số bạn đoán: "));
             if (Doan < num) {
                 alert("Nhập số lớn hơn vào");
             } else if (Doan > num) {
