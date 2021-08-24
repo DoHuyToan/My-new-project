@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="Chơi()">Chơi</button>
+<script>
+    function Chơi() {
+        let min = parseInt(prompt("Số bé nhất là: "));
+        let max = parseInt(prompt("Số lớn nhất là: "));
+        let num = Math.floor(Math.random() * (max - min)) + min;
+        // Mathfloor là làm tròn, Mathrandom nó sẽ random trong khoảng từ min đến max
+        let Doan = parseInt(prompt("Số bạn đoán: "));
+        let i = 1;
+
+        while (Doan != num && i <= 3) {
+            Doan = parseInt(prompt("Số bạn đoán: "));
+            if (Doan < num) {
+                alert("Nhập số lớn hơn vào");
+            } else if (Doan > num) {
+                alert("Nhập số nhỏ hơn vào");
+            }
+            i++
+        }
+
+        if (Doan == num && i <= 3) {
+            alert("Chúc mừng bạn");
+        } else {
+            alert("Rất tiêc đã sai")
+        }
+    }
+</script>
+</body>
+</html>
