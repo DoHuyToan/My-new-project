@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function demo() {
+    let i =0;
+    let count =0;
+    while (count<8){
+      if (check(i)){
+        document.writeln(i);
+        count++
+      }
+      i++
+    }
+  }
+  demo();
+  function check(n){
+    if (n<2) return false;
+    else if (n<4) return true;
+    else {
+      for (let i = 2; i < (n-1); i++) {
+        if (n%i==0) return false;
+      }
+      return true;
+    }
+  }
+</script>
+</body>
+</html>
