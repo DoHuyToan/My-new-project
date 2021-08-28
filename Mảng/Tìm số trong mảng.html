@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let ta=["one", "two", "three"];
+  let tv=["một", "hai", "ba"];
+  // Tìm trong mảng xem có phần tử đó ko?
+  // Nếu có thì trả về chỉ số (0-(n-1))
+  // Nếu ko thì trả về -1 (ko có chỉ số nào là -1 trong mảng cả)
+  function findByName(){
+    let keyword = prompt("Moi nhap vao tu can tim");
+    for (let i = 0; i < ta.length; i++) {
+      if (ta[i] == keyword) return i;
+    }
+    return -1;
+  }
+
+  // function findByName1(){
+  //   let keyword = prompt("Moi nhap vao tu can tim");
+  //   let index=-1;
+  //   for (let i = 0; i < ta.length; i++) {
+  //     if (ta[i] == keyword) {
+  //       index=i;
+  //     }
+  //   }
+  //   if(index!= -1){
+  //     alert(tv[index]);
+  //   }
+  //   else {
+  //     alert("Khong tim thay");
+  //   }
+  // }
+
+  // git add .
+
+</script>
+</body>
+</html>
