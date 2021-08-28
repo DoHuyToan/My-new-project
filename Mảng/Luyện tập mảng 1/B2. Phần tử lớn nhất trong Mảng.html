@@ -7,16 +7,20 @@
 <body>
 <script>
     let num = [];
-    let n = prompt('Mời nhập số lượng số nguyên');
-    n = parseInt(n);
+    let n = parseInt(prompt('Nhập số lượng số nguyên'));
+    let isContain = false
+
     for (let i=0; i < n;i++) {
-        let x = prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây');
-        x = parseInt(x);
+        let x = parseInt(prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây'));
         for (let j=0;j<=i;j++){
-            while (x === num[j]) {
-                x = prompt('Nhập lại đi');
-                x = parseInt(x)
+            if (x === num[j]) {
+                isContain = true
             }
+        }
+        if (isContain === false) {
+            num.push(x)
+        } else {
+            isContain = false
         }
         num[i] = x;
     }
