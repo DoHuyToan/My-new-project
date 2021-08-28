@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [];
+    let n = prompt('Mời nhập số lượng số nguyên');
+    n = parseInt(n);
+    for (let i=0; i < n;i++) {
+        let x = prompt('Nhập số nguyên muốn cho tại vị trí ' + i + ' vào đây');
+        x = parseInt(x);
+        for (let j=0;j<=i;j++){
+            while (x === num[j]) {
+                x = prompt('Nhập lại đi');
+                x = parseInt(x)
+            }
+        }
+        num[i] = x;
+    }
+
+    let max = num[0];
+    let index = 0;
+    for (let i=1;i < num.length;i++) {
+        if (num[i]> max) {
+            max = num[i];
+            index = i;
+        }
+    }
+    document.write(max + ' là số lớn nhất tại vị trí '+ index);
+</script>
+</body>
+</html>
