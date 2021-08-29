@@ -6,24 +6,22 @@
 </head>
 <body>
 <script>
-    let num=[3,5,6,8];
-    let x = parseInt(prompt("Nhập số cần tìm vào"));
-    index = -1
-    let check = false
-
-    for (i=0; i<4; i++){
-        //nếu điều kiện đúng thì gán lại "Tìm thấy"
-        if (x===num[i]){
-            check = true
-            index = i
+    function sapxep(){
+        let num=[1,6,5,9,8];
+        function sapxep(){
+            for (i=0; i<num.length-1; i++){
+                for(j=0; i<num.length-1-i; j++){
+                    if(num[j]<num[j+1]){
+                        let tempo = num[j]
+                        num[j] = num[j+1]
+                        num[j+1] = tempo
+                    }
+                }
+            }
         }
     }
-
-    if (check===true){
-        alert("Tìm thấy ở vị trí " + index)
-    } else {
-        alert("Ko tìm thấy")
-    }
+    sapxep()
+    console.log(num)
 
 
 
