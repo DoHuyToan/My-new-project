@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = [];
+    let n = prompt('Nhập số lượng phần tử vào đây');
+    n = parseInt(n);
+    for (let i = 0; i < n; i++) {
+        let x = prompt('Nhập phần tử cần cho vào mảng ở vị trí ' + i);
+        x = parseInt(x);
+        num[i] = x;
+    }
+
+    let index = 0;
+    for (let i = 0; i < num.length; i++) {
+        if (num[i]%2 === 0) {
+            document.write(num[i] + '<br>');
+            index++;
+        }
+    }
+    document.write('Vậy hàm có tổng cộng ' + index + ' số chẵn');
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = []
+    let n = parseInt(prompt("Nhập tổng số phần tử"))
+    let count = 0
+    let index = 0
+    for (i=0; i<n; i++){
+        let x = parseInt(prompt("Nhập phần tử thứ " + i))
+        num[i] = x
+    }
+    for (i=0; i<n; i++){
+        if (num[i]%2==0){
+            index = i
+            count++
+            alert(num[i] + " là số chẵn của phần tử " + index)
+        }
+    }
+    alert("Tổng số phần tử chẵn là " + count)
+</script>
+</body>
+</html>
