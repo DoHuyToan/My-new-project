@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let chuoi = "Xin chào cả nhà C0821H1";
+  let bang = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789";
+  let count=1
+  for (let i=0; i < chuoi.length;i++) {
+    for (let j=0; j < bang.length;j++) {
+      if (chuoi[i] == bang[j] && chuoi[i+1] != bang[j]) {
+        count++;
+      }
+    }
+  }document.write('Vậy chuỗi có ' +count +' từ');
+</script>
+</body>
+</html>
