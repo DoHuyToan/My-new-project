@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = []
+    num.length = 3
+    for (i=0; i<3; i++){
+        x = parseInt(prompt("Nhập phần tử thứ" + i))
+        num[i] = x
+    }
+    let first = 0;
+    let last = num.length-1;
+    while (first<last) {
+        let a = num[first];
+        num[first] = num[last]
+        num[last] = a;
+        first++;
+        last--;
+    }
+    alert(num);
+</script>
+
+</body>
+</html>
