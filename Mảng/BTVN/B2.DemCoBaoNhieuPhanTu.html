@@ -6,25 +6,21 @@
 </head>
 <body>
 <script>
-    let num = [];
-    let n = prompt('Nhập số lượng phần tử vào đây');
-    n = parseInt(n);
-    for (let i = 0; i < n; i++) {
-        let x = prompt('Nhập phần tử cần cho vào mảng ở vị trí ' + i);
-        x = parseInt(x);
-        num[i] = x;
+    let num = []
+    let n = parseInt(prompt("Nhập tổng số phần tử"))
+    let count = 0
+    for (i=0; i<n; i++){
+        let x = parseInt(prompt("Nhập phần tử thứ " + i))
+        num[i] = x
     }
 
-    let index = 0;
-    for (let i = 0; i < num.length; i++) {
-        if (num[i]%2 === 0) {
-            document.write(num[i] + '<br>');
-            index++;
+    let a = parseInt(prompt("Nhập số muốn tìm"))
+    for (i=0; i<n; i++){
+        if (num[i]===a){
+            count++
         }
     }
-    document.write('Vậy hàm có tổng cộng ' + index + ' số chẵn');
-
-
+    alert("Tổng số có " + count + " phần tử " + a)
 </script>
 </body>
 </html>
