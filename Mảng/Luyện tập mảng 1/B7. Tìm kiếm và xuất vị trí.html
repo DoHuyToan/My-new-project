@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=[3,5,6,8];
+    let x = parseInt(prompt("Nhập số cần tìm vào"));
+    index = -1
+    let check = false
+
+    for (i=0; i<4; i++){
+        //nếu điều kiện đúng thì gán lại "Tìm thấy"
+        if (x===num[i]){
+            check = true
+            index = i
+        }
+    }
+
+    if (check===true){
+        alert("Tìm thấy ở vị trí " + index)
+    } else {
+        alert("Ko tìm thấy")
+    }
+
+
+
+</script>
+</body>
+</html>
