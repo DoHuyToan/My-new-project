@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //tạo hàm số nguyên tố
+    function checkNgTo(n){
+        if(n<2){
+            return false
+        }
+        for(i=0; i<n; i++){
+            if(n%i==0){
+                return false
+            }
+            return true
+        }
+        return true
+    }
+    function findNgTo(){
+        for (i=2; i<=1000; i++)
+        if(checkNgTo()){
+            document.writeln(checkNgTo()+ ", ")
+        }
+    }
+    findNgTo()
+
+
+</script>
+</body>
+</html>
