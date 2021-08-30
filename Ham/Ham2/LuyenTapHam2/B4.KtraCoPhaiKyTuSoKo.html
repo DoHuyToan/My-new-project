@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.-->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<body>
+<label for="KyTu">Nhập ký tự</label>
+<input id="KyTu"> <br>
+<input type="button" onclick="check()" value="Kiểm tra">
+<script>
+    //Hàm kiểm tra true, false
+    let array = [0,1,2,3,4,5,6,7,8,9];
+    function kiemTra(array,n) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i]==n){
+                return true;
+            }
+        }
+        return false
+    }
+
+    function check(){
+        let x = document.getElementById("KyTu").value;
+        if (kiemTra(array,x)==true){
+            alert("Đây là ký từ số")
+        } else {
+            alert("Đây ko phải là ký tự số")
+        }
+    }
+    check()
+</script>
+</body>
+</html>
