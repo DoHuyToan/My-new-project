@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = [Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus]
+    let array2 = [Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo]
+    //kiểm tra xem có trong hàm ko và tìm ra vị trí của nó
+    //Tên checkStar; Tham số: array, input; Xuất: i
+    function checkStar(array, a){
+        for(i=0; i<array.length; i++){
+            index = -1
+            if(array[i]==a){
+                index = i
+                return index
+            }
+        }
+    }
+    //xuất ra vị trí index với tham số array2 và input
+    function xuatArray2 (){
+        let input = prompt("Nhập tên ngôi sao")
+        let n = checkStar(array1, input)
+        document.writeln(n)
+    }
+     xuatArray2()
+
+
+</script>
+</body>
+</html>
