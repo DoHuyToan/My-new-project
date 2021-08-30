@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //Ten ham: giaiThua; Tham số: số nhập vào; Xuất giai thừa ra
+  let num = parseInt(prompt("Số cần tính giai thừa"))
+  let factorial = 1
+  function giaiThua(){
+      for (i=1; i<=num; i++){
+          factorial*=i
+      }
+      return factorial
+  }
+  let n = giaiThua(num)
+  alert("Giai thừa của " +num+ " là " +n)
+</script>
+</body>
+</html>
