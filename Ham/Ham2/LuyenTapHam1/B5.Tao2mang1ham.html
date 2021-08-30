@@ -6,26 +6,29 @@
 </head>
 <body>
 <script>
-    let array1 = [Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus]
-    let array2 = [Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo]
-    //kiểm tra xem có trong hàm ko và tìm ra vị trí của nó
     //Tên checkStar; Tham số: array, input; Xuất: i
-    function checkStar(array, a){
+    let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    //kiểm tra xem có trong hàm ko và tìm ra vị trí của nó
+    function check(array,a){
         for(i=0; i<array.length; i++){
-            index = -1
-            if(array[i]==a){
-                index = i
-                return index
+            if(array1[i]==a){
+                return i
             }
+        } return -1
+    }
+    // xuất ra vị trí index với tham số array2 và input
+    function output(){
+        let star = prompt("Nhập tên ngôi sao")
+        let n = check(array1,star)
+        if(n==-1){
+            alert("Ko có ngôi sao nào trùng tên")
+        }
+        else {
+            alert("Ngôi sao " +star+ " thuộc chòm sao " +array2[n])
         }
     }
-    //xuất ra vị trí index với tham số array2 và input
-    function xuatArray2 (){
-        let input = prompt("Nhập tên ngôi sao")
-        let n = checkStar(array1, input)
-        document.writeln(n)
-    }
-     xuatArray2()
+    output()
 
 
 </script>
