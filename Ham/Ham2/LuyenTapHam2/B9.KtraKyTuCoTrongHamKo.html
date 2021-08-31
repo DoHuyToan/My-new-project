@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array = ['ba',6,'nam',9]
+    function check(arr,n){
+        let count = 0
+        for(i=0; i<arr.length; i++){
+            if(arr[i]==n){
+                count++
+            }
+        } return count
+    }
+    function count(){
+        let n = prompt("Điền chữ cần tìm")
+        alert(check(array,n))
+    }
+   count()
+</script>
 </body>
 </html>
