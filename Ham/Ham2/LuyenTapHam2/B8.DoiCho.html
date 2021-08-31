@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let array = [-3, 5, 1, 3, 2, 10];
+    // function doiCho(array) {
+    //     let first = 0
+    //     let last = array.length-1
+    //     for ( ; first< last; ) {
+    //         let tem = array[first];
+    //         array[first] = array[last];
+    //         array[last] = tem
+    //         first++
+    //         last--
+    //     }
+    //     return array
+    // }
+    // document.writeln(doiCho(array));
+
+
+  //   cách này đổi chỗ đến 1 nửa là chuẩn, nhưng chay tiếp lại đổi lại về ban đầu
+      let arr = [-3, 5, 1, 3, 2, 10];
+  function doiCho(arr) {
+      let last = arr.length-1
+      for(i=0; i<(arr.length/2); i++){
+          temp = arr[i]
+          arr[i]= arr[last-i]
+          arr[last-i] = temp
+      }
+      return arr
+  }
+  document.writeln(doiCho(arr));
+
+
+</script>
+</body>
+</html>
