@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200" style="border: 1px solid"></canvas>
+
+<script>
+  //khai báo lớp cách 1
+  // let Rectangle = function (width, height) {
+  //   //khai bao thuoc tinh
+  //   this.width = width;
+  //   this.height = height;
+  //
+  //   // khai bao phuong thuc
+  //   this.getArea = function (){
+  //     return this.width*this.height;
+  //   }
+  //
+  //   this.getPerimetter = function (){
+  //     return (this.width + this.height)*2;
+  //   }
+  // }
+
+  // khai bao lop cach 2
+  class Rectangle2 {
+    // khởi tạo
+    constructor(width, height) {
+      this.width= width;
+      this.height = height;
+    }
+    getArea(){
+      return this.width*this.height;
+    }
+    getPerimetter(){
+      return (this.width + this.height)*2;
+    }
+    drawCanvas(){
+      let c= document.getElementById("myCanvas");
+      let ctx = c.getContext("2d");
+      ctx.beginPath();
+      // ctx.arc(100, 50, 35, 0, 2*Math.PI);
+      ctx.fillStyle="#10523b";
+      ctx.fillRect(10, 10, this.width, this.height);
+      ctx.fill();
+    }
+
+  }
+  // tạo mới đối tượng, dùng từ khoá new
+  let manhdatcuaDuy = new Rectangle(4,50);
+  let manhdatcuaTuan = new Rectangle2(50, 100);
+
+  // sử dụng phương thức của đối tượng
+  manhdatcuaTuan.drawCanvas();
+</script>
+</body>
+</html>

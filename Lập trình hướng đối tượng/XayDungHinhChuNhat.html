@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200" style="border: 1px solid"></canvas>
+<script>
+    class Rectangle {
+        constructor(_length,_width){
+            this.length = _length;
+            this.width = _width;
+        }
+        getArea(){
+            return this.width*this.length;
+        }
+        getPerimeter(){
+            return (this.length + this.width)*2;
+        }
+        drawCanvas(){
+            let c= document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.beginPath();
+            // ctx.arc(100, 50, 35, 0, 2*Math.PI);
+            ctx.fillStyle="#10523b";
+            ctx.fillRect(10, 10, this.length, this.width);
+            ctx.fill();
+        }
+    }
+    let hinhchunhat = new Rectangle(50,100);
+    let area = hinhchunhat.getArea();
+    let perimeter = hinhchunhat.getPerimeter();
+    alert("Diện tích là " + area);
+    alert("Chu vi là " + perimeter);
+    hinhchunhat.drawCanvas();
+
+</script>
+</body>
+</html>
