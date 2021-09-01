@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(_temp) {
+            this.temp = _temp
+        }
+        getCF(){
+            if(this.temp>=-273){
+                return (this.temp*1.8 + 32)
+            }
+            // else {
+            //     return "Nhiệt độ quá thấp"
+            // }
+        }
+        getKenvin(){
+            if(this.temp>=-273){
+                return (this.temp + 273.15)
+            }
+            // else {
+            //     return "Nhiệt độ quá thấp"
+            // }
+        }
+    }
+    let n = parseInt(prompt("Nhập nhiệt độ cần chuyển đổi vào"))
+    let nhietdo = new Temperature(n)
+    let CF = nhietdo.getCF().toFixed(2)
+    let Kenvin = nhietdo.getKenvin().toFixed(2)
+    alert("Đổi sang là " + CF + "độ F")
+    alert("Đổi sang là " + Kenvin + "độ Kenvin")
+</script>
+</body>
+</html>
