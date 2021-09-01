@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //khai bao lop
+    class Rectangle {
+        //khai bao thuoc tinh
+        constructor(_with, _height) {
+            this.width = _with;
+            this.height = _height;
+        }
+        // khai bao phuong thuc
+        getArea(){
+            return this.width*this.height;
+        }
+        getPerimetter(){
+            return (this.width+this.height)*2;
+        }
+    }
+    // khoi tao doi tuong
+    let hcn1 = new Rectangle(50, 100);
+    let hcn2= new Rectangle(100, 300);
+
+    hcn1.getArea();
+    hcn2.getPerimetter();
+</script>
+</body>
+</html>

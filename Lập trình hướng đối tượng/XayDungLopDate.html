@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Thuộc tính:-->
+<!--day (ngày) sẽ nhận vào giá trị dạng số nguyên-->
+<!--month (tháng) sẽ nhận vào giá trị dạng số nguyên-->
+<!--year (năm) sẽ nhận vào giá trị dạng số nguyên-->
+
+<!--Phương thức:-->
+<!--Date(day, month, year) là phương thức khởi tạo để tạo đối tượng với 3 tham số.-->
+<!--getDay(), getMonth(), getYear() là phương thức trả về ngày, tháng, năm-->
+<!--setDay(), setMonth(), setYear() là phương thức thiết đặt lại giá trị mới cho ngày tháng năm-->
+<body>
+<script>
+    class MyDate {
+        constructor(_day,_month,_year) {
+            this.day = _day
+            this.month = _month
+            this.year = _year
+        }
+        getDay(){
+            return this.day
+        }
+        getMonth(){
+            return this.month
+        }
+        getYear(){
+            return this.year
+        }
+        setDay(){
+            this.day  = day
+        }
+        setMonth(){
+            this.month = month
+        }
+        setYear(){
+            this.year = year
+        }
+    }
+
+    let date = new MyDate(2, 2, 2007);
+    day = date.getDay()
+    month = date.getMonth()
+    year = date.getYear()
+    alert(day + "/" + month + "/" + year);
+    date.day = 10
+    date.month = 10
+    date.year = 2019
+    alert(date.day + "/" + date.month + "/" + date.year)
+
+
+</script>
+</body>
+</html>
