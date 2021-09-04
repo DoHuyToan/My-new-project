@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>PhoneToan</td>
+        <td>PhoneThai</td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="messToan">
+            <button onclick="sendToan()">Send</button>
+        </td>
+        <td>
+            <input type="text" id="messThai">
+            <button onclick="sendThai()">Send</button>
+        </td>
+    </tr>
+    <tr>
+        <td id="inboxToan">InboxToan</td>
+        <td id="inboxThai">InboxThai</td>
+    </tr>
+</table>
+
+<script>
+    class Mobile{
+        constructor(_name) {
+            this.name= _name;
+            this.status= true;
+            this.battery = 100;
+            this.draft= "";
+            this.inbox= [];
+            this.outbox= [];
+        }
+        checkStatus(){
+            return this.status;
+        }
+        onOff(){
+            return this.status = !this.status;
+        }
+        writting(text){
+            this.draft = text;
+            this.battery--;
+        }
+        sendMessage(phone){
+            //gửi sang input phone khác
+            phone.inbox.push(this.draft);
+            this.outbox.push(this.draft);
+            //xóa trong thư nháp
+            this.draft = "";
+            this.battery--;
+        }
+        getInbox(){
+            return this.inbox;
+            this.battery--;
+        }
+        getOutbox(){
+            if(status){
+                return this.outbox;
+                this.battery--;
+            }
+        }
+        charge(){
+            for(let i=0; i<=100, this.battery<=100; i++){
+                this.battery++
+                return "full battery"
+            }
+        }
+    }
+    let phoneToan = new Mobile("Toan")
+    let phoneThai = new Mobile("Thai")
+    function sendToan(){
+        let mess = document.getElementById("messToan").value
+        phoneToan.writting(mess)
+        phoneToan.sendMessage(phoneThai)
+        let inboxThai = phoneThai.inbox.join("-");
+        document.getElementById("inboxThai").innerText = inboxThai
+    }
+    function sendThai(){
+        let mess = document.getElementById("messThai").value
+        phoneThai.writting(mess)
+        phoneThai.sendMessage(phoneToan)
+        let inboxToan = phoneToan.inbox.join("-");
+        document.getElementById("inboxToan").innerText = inboxToan
+    }
+</script>
+</body>
+</html>
