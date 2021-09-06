@@ -10,7 +10,15 @@ class Remote {
         this.code = code
     }
     changeChannel(newChannel){
-        this.tivi.setChannel(newChannel)
+        if(this.tivi){
+            this.tivi.setChannel(newChannel)
+        }
+    }
+    changeVolume(newVolume){
+        this.tivi.setVolume(newVolume)
+    }
+    onOff(){
+        this.tivi.turOnOff()
     }
 }
 let remote = new Remote("HPG","tv1")
