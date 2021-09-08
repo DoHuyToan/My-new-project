@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let string=''
+    let Time=s.slice(8,10)
+    let Hour=parseInt(s.slice(0,2))
+    let Minute=s.slice(2,8)
+    if (Time=='AM'){
+        if (Hour==12) {
+            Hour='00'
+        } else {
+            Hour='0'+Hour
+        }
+    }
+    if (Time=='PM') {
+        if (Hour!=12) {
+            Hour=Hour+12
+        }
+    }
+    string=Hour+Minute
+    return(string)
+    }
+
+</script>
 </body>
 </html>

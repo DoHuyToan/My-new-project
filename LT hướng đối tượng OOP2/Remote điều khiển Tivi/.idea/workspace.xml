@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56b3b6cd-75ae-4deb-a34a-ff7a526562d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Cấu Trúc Lặp/Hiển thị các số nguyên tố đầu tiên.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Cấu Trúc Lặp/Hiển thị các số nguyên tố đầu tiên.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/B5.Tao2mang1ham.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/Ham2/B4.ThemHamAlert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/Ham2/LuyenTapHam1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Ham/Ham2/LuyenTapHam1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/QuanLySP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/UngDungQuanLySanPham.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Ham/UngDungQuanLySanPham/Phát triển thêm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Bóng đèn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Bóng đèn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Công tắc và Bóng đèn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Công tắc và Bóng đèn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Công tắc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Công tắc và Bóng đèn/Công tắc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Duy.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Duy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gửi tin nhắn giữa 2 đối tượng điện thoại.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Gửi tin nhắn giữa 2 đối tượng điện thoại.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhatTrienQuanLyUngDungSanPham/QlySP.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PhatTrienQuanLyUngDungSanPham/QlySP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lập trình hướng đối tượng/XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lập trình hướng đối tượng/XayDungLopMoTaDienThoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lập trình hướng đối tượng/Ôn/Tạo lớp điên thoại.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lập trình hướng đối tượng/Ôn/Điện thoại.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lập trình hướng đối tượng/Ôn/Điện thoại.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1xmoLoDjgLCMuTHBAYpxHvLvdJZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Công tắc và Bóng đèn" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56b3b6cd-75ae-4deb-a34a-ff7a526562d7" name="Changes" comment="" />
+      <created>1630969571096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630969571096</updated>
+      <workItem from="1630969572270" duration="87000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
-<script>
-  class Cat {
-      constructor(_name,_weight,_speed){
-          this.name=_name
-          this.weight =_weight
-          this.speed=_speed
-          this.status = true
-          this.call = text
-      }
-      dielife(){
-          return  this.status
-      }
-      getCall(text){
-          this.call= text
-      }
-      killMouse(){
-          let count = 0
-          if(cat.speed>mouse.speed){
-              count++
-          }
-      }
-      eatMouse(){
-
-      }
-  }
-</script>
+<table>
+    <tr>
+        <td>Điện thoại của Định</td>
+        <td>Điện thoại của Trường</td>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="mess1">
+            <button onclick="guitinchoTruong()">Gui tin nhan</button>
+        </td>
+        <td><input type="text" id="mess2">
+            <button>Gui tin nhan</button></td>
+    </tr>
+    <tr>
+        <td id="inbox1">Inbox của Định</td>
+        <td id="inbox2">Inbox của Trường</td>
+    </tr>
+</table>
+<script src="DienThoai.js"></script>
 </body>
 </html>
