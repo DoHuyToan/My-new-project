@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<a href="trangchu.html"></a>
+<style>
+    table tr td {
+        border: red 1px solid;
+    }
+</style>
+<body>
+<h1> Danh sách điện thoại</h1>
+<table>
+    <input id="newName" placeholder="Tên sản phẩm mới">
+    <input id="newPrice" placeholder="Giá sản phẩm mới">
+    <input id="newDescription" placeholder="Mô tả sản phẩm mới">
+    <button onclick="addNemProduct()">Thêm điện thoại mới</button>
+    <br>
+<!--tên tiêu đề-->
+<!--    muốn viết hoa Tiêu đề nhưng bị mất kẻ ở ô tiêu đề-->
+    <tr>
+        <th>Tên sản phẩm</th>
+        <th style="text-align:center">Giá sản phẩm</th>
+        <th style="text-align:center">Mô tả sản phẩm</th>
+        <th style="text-align:center">Sửa</th>
+        <th style="text-align:center">Xóa</th>
+    </tr>
+    <br>
+<!--    nội dung-->
+    <tbody id="products">
+
+    </tbody>
+    <br>
+<!--    chưa làm đc: cách ra với phần nội dung , trộn 2 cột nhìn cho đẹp-->
+
+</table>
+<script src="productmobile.js"></script>
+<script src="jsmobile.js"></script>
+</body>
+</html>
