@@ -15,9 +15,10 @@
 <h2>Danh sách phụ kiện</h2>
 <a href="trangchu.html"></a>
 <table>
-    <input id="newNameA" placeholder="Nhập tên sản phẩm mới">
-    <input id="newPriceA" placeholder="Nhập giá sản phẩm mới">
-    <input id="newDescriptionA" placeholder="Nhập mô tả sản phẩm mới">
+    <input id="newNameA" placeholder="Nhập tên phụ kiện mới">
+    <input id="newPriceA" placeholder="Nhập giá phụ kiện mới">
+    <input id="newDescriptionA" placeholder="Nhập mô tả phụ kiện mới">
+    <input id="newPictureA" placeholder="Nhập ảnh phụ kiện mới">
     <button onclick="addNewProductA()">Thêm phụ kiện mới</button>
     <br>
 <!--    tiêu đề-->
@@ -25,15 +26,17 @@
         <th style="text-align:center">Tên phụ kiện</th>
         <th style="text-align:center">Giá phụ kiện</th>
         <th style="text-align:center">Mô tả phụ kiện</th>
+        <th style="text-align:center">Ảnh</th>
         <th style="text-align:center">Sửa</th>
         <th style="text-align:center">Xóa</th>
+        <th style="text-align:center">Bán hàng</th>
     </tr>
     <br>
 <!--    nội dung-->
     <tbody id="accessory">
-
     </tbody>
 </table>
+<label for="billA">Total Bill: <input id="billA" value="0"></label>
 <script src="accessory.js"></script>
 <script src="jsaccessory.js"></script>
 </body>

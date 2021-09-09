@@ -17,16 +17,18 @@
     <input id="newName" placeholder="Tên sản phẩm mới">
     <input id="newPrice" placeholder="Giá sản phẩm mới">
     <input id="newDescription" placeholder="Mô tả sản phẩm mới">
+    <input id="newPicture" placeholder="Hình ảnh sản phẩm mới">
     <button onclick="addNemProduct()">Thêm điện thoại mới</button>
-    <br>
 <!--tên tiêu đề-->
 <!--    muốn viết hoa Tiêu đề nhưng bị mất kẻ ở ô tiêu đề-->
     <tr>
-        <th>Tên sản phẩm</th>
-        <th style="text-align:center">Giá sản phẩm</th>
-        <th style="text-align:center">Mô tả sản phẩm</th>
-        <th style="text-align:center">Sửa</th>
-        <th style="text-align:center">Xóa</th>
+        <th style="text-align:center"> Tên sản phẩm </th>
+        <th style="text-align:center"> Giá sản phẩm </th>
+        <th style="text-align:center"> Mô tả sản phẩm </th>
+        <th style="text-align:center"> Ảnh </th>
+        <th style="text-align:center"> Sửa </th>
+        <th style="text-align:center"> Xóa </th>
+        <th style="text-align:center"> Bán hàng </th>
     </tr>
     <br>
 <!--    nội dung-->
@@ -35,8 +37,8 @@
     </tbody>
     <br>
 <!--    chưa làm đc: cách ra với phần nội dung , trộn 2 cột nhìn cho đẹp-->
-
 </table>
+<label for="Bill">TotalBill: <input id="Bill" value="0"></label>
 <script src="productmobile.js"></script>
 <script src="jsmobile.js"></script>
 </body>

@@ -1,8 +1,9 @@
 class ProductA{
-    constructor(_nameA,_priceA,_descriptionA) {
+    constructor(_nameA,_priceA,_descriptionA,_pictureA) {
         this.nameaA = _nameA
         this.priceA = _priceA
-        this.description = _descriptionA
+        this.descriptionA = _descriptionA
+        this.pictureA = _pictureA
     }
     getNameA(){
         return this.nameaA
@@ -11,6 +12,9 @@ class ProductA{
         return this.priceA
     }
     getDescriptionA(){
-        return this.description
+        return this.descriptionA
+    }
+    getPictureA(){
+        return this.pictureA
     }
 }
