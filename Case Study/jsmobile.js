@@ -54,4 +54,18 @@ function sellProduct(index){
     let totalPrice = value + price
     document.getElementById("Bill").value = totalPrice
 }
+function findProduct (){
+    let find = document.getElementById("Find").value
+    for(let i=0; i<product.length; i++){
+        if(find===product[i].getName()){
+            let name = product[i].getName()
+            let price = product[i].getPrice()
+            let description = product[i].getDescription()
+            document.getElementById("result").innerHTML = "Thông tin sản phẩm: " + "<br>"  +name+ " " +price+ " " +description
+        }
+        else {
+            document.getElementById("result").innerText = "Không tìm thấy"
+        }
+    }
+}
 

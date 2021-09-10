@@ -53,3 +53,17 @@ function sellProductA(index){
     let total = price + value;
     document.getElementById("billA").value = total;
 }
+function findProductA (){
+    let findA = document.getElementById("FindA").value
+    for(let i=0; i<productA.length; i++){
+        if(findA===productA[i].getNameA()){
+            let nameA = productA[i].getNameA()
+            let priceA = productA[i].getPriceA()
+            let descriptionA = productA[i].getDescriptionA()
+            document.getElementById("resultA").innerHTML = "Thông tin sản phẩm: " + "<br>"  +nameA+ " " +priceA+ " " +descriptionA
+        }
+        else {
+            document.getElementById("resultA").innerText = "Không tìm thấy"
+        }
+    }
+}

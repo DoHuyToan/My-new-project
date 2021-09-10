@@ -7,13 +7,35 @@
 </head>
 
 <style>
-    table tr td {
-        border: blue 1px solid;
+    p#resultA {
+        background-color: greenyellow;
     }
+    table th {
+        border: red 2px solid;
+        color: blue;
+        background-color: aquamarine;
+    }
+
+    table tr td {
+        border: red 2px solid;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: lavender;
+    }
+
 </style>
 <body>
 <h2>Danh sách phụ kiện</h2>
 <a href="trangchu.html"></a>
+<label for="FindA"><input id="FindA"></label>
+<button onclick="findProductA()">Tìm kiếm sản phẩm</button>
+<p id="resultA"></p>
+<br>
 <table>
     <input id="newNameA" placeholder="Nhập tên phụ kiện mới">
     <input id="newPriceA" placeholder="Nhập giá phụ kiện mới">
@@ -23,7 +45,7 @@
     <br>
 <!--    tiêu đề-->
     <tr>
-        <th style="text-align:center">Tên phụ kiện</th>
+        <th height="36" style="text-align:center">Tên phụ kiện</th>
         <th style="text-align:center">Giá phụ kiện</th>
         <th style="text-align:center">Mô tả phụ kiện</th>
         <th style="text-align:center">Ảnh</th>
@@ -36,6 +58,7 @@
     <tbody id="accessory">
     </tbody>
 </table>
+<br>
 <label for="billA">Total Bill: <input id="billA" value="0"></label>
 <script src="accessory.js"></script>
 <script src="jsaccessory.js"></script>
