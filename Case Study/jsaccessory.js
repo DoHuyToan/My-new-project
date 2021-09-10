@@ -14,9 +14,9 @@ function showProductA(){
             '        <td style="text-align:right">' +productA[i].getPriceA()+ '</td>\n' +
             '        <td>' +productA[i].getDescriptionA()+ '</td>\n' +
             '        <td>' +'<img src="' +productA[i].getPictureA()+ '" height="50" width="50" alt="Không có ảnh"/>'+ '</td>\n' +
-            '        <td><button onclick="editProductA(' +i+ ')">Sửa</td>\n' +
-            '        <td><button onclick="clearProductA(' +i+ ')">Xóa</button></td>\n' +
-            '        <td><button onclick="sellProductA(' +i+ ')">Bán hàng</button></td>\n' +
+            '        <td><button style="border: none" onclick="editProductA(' +i+ ')">Sửa</td>\n' +
+            '        <td><button style="border: none" onclick="clearProductA(' +i+ ')">Xóa</button></td>\n' +
+            '        <td><button style="border: none" onclick="sellProductA(' +i+ ')">Bán hàng</button></td>\n' +
             '    </tr>'
     }
     document.getElementById("accessory").innerHTML = conten
@@ -34,13 +34,13 @@ function addNewProductA(){
     document.getElementById("newNameA").value=""
     document.getElementById("newPriceA").value=""
     document.getElementById("newDescriptionA").value=""
-    document.getElementById("disabledA").disabled = true
+    document.getElementById("disableA").disabled = true
 }
 function checkAddA(){
     if(document.getElementById("newNameA").value!==""
         && document.getElementById("newPriceA").value!==""
         && document.getElementById("newDescriptionA").value!==""){
-        document.getElementById("disabledA").disabled = false
+        document.getElementById("disableA").disabled = false
     }
 }
 
@@ -74,9 +74,6 @@ function findProductA (){
             let priceA = productA[i].getPriceA()
             let descriptionA = productA[i].getDescriptionA()
             document.getElementById("resultA").innerHTML = "Thông tin sản phẩm: " + "<br>"  +nameA+ " " +priceA+ " " +descriptionA
-        }
-        else {
-            document.getElementById("resultA").innerText = "Không tìm thấy"
         }
     }
 }

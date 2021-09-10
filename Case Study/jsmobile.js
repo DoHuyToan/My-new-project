@@ -15,9 +15,9 @@ function showProducts() {
             '        <td style="text-align:right">' +product[i].getPrice()+ '</td>\n' +
             '        <td>' +product[i].getDescription()+ '</td>\n' +
             '        <td>' +'<img src="'+ product[i].getPicture() + '" height="50" width="50" alt="Không có ảnh"/>'+ '</td>\n' +
-            '        <td><button onclick="editProduct(' +i+ ')">Sửa</button></td>\n' +
-            '        <td><button onclick="clearProduct(' +i+ ')">Xóa</button></td>\n' +
-            '        <td><button onclick="sellProduct(' +i+ ')">Bán hàng</button></td>\n' +
+            '        <td><button style="border: none" onclick="editProduct(' +i+ ')">Sửa</button></td>\n' +
+            '        <td><button style="border: none" onclick="clearProduct(' +i+ ')">Xóa</button></td>\n' +
+            '        <td><button style="border: none" onclick="sellProduct(' +i+ ')">Bán hàng</button></td>\n' +
             '    </tr>'
     }
     document.getElementById("products").innerHTML = content
