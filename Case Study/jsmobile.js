@@ -33,6 +33,18 @@ function addNemProduct() {
     let newProduct = new Product (newName,newPrice,newDescription,newPicture);
     product.push(newProduct);
     showProducts();
+    document.getElementById("newName").value = ""
+    document.getElementById("newPrice").value = ""
+    document.getElementById("newDescription").value = ""
+    document.getElementById("disabled").disabled = true;
+}
+//điền đủ thông tin nút "Thêm sản phẩm" mới hiện
+function checkAdd() {
+    if (document.getElementById("newName").value !== ""
+        && document.getElementById("newPrice").value !== ""
+        && document.getElementById("newDescription").value !== "") {
+        document.getElementById("disabled").disabled = false;
+    }
 }
 //xóa sản phẩm, phải có tham số truyền vào vị trí của sản phẩm
 function clearProduct(index){
@@ -44,8 +56,8 @@ function editProduct(index){
     let editName = prompt("Nhập tên điện thoại thay thế");
     let editPrice = prompt("Nhập giá điện thoại thay thế");
     let editDescription = prompt("Nhập mô tả điện thoại thay thế");
-    let editProduct = new Product(editName,editPrice,editDescription);
-    product[index] = editProduct;
+    let editProduct1 = new Product(editName,editPrice,editDescription);
+    product[index] = editProduct1;
     showProducts();
 }
 function sellProduct(index){
@@ -56,16 +68,15 @@ function sellProduct(index){
 }
 function findProduct (){
     let find = document.getElementById("Find").value
-    for(let i=0; i<product.length; i++){
-        if(find===product[i].getName()){
+    for(let i=0; i<product.length; i++) {
+        if (find === product[i].getName()) {
             let name = product[i].getName()
             let price = product[i].getPrice()
             let description = product[i].getDescription()
-            document.getElementById("result").innerHTML = "Thông tin sản phẩm: " + "<br>"  +name+ " " +price+ " " +description
-        }
-        else {
-            document.getElementById("result").innerText = "Không tìm thấy"
+            document.getElementById("result").innerHTML = "Thông tin sản phẩm: " + "<br>" + name + " " + price + " " + description
         }
     }
 }
+
+
 

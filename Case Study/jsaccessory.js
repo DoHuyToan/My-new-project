@@ -31,7 +31,19 @@ function addNewProductA(){
     let newProductA = new ProductA(newNameA,newPriceA,newDescriptionA,newPictureA);
     productA.push(newProductA);
     showProductA();
+    document.getElementById("newNameA").value=""
+    document.getElementById("newPriceA").value=""
+    document.getElementById("newDescriptionA").value=""
+    document.getElementById("disabledA").disabled = true
 }
+function checkAddA(){
+    if(document.getElementById("newNameA").value!==""
+        && document.getElementById("newPriceA").value!==""
+        && document.getElementById("newDescriptionA").value!==""){
+        document.getElementById("disabledA").disabled = false
+    }
+}
+
 //xóa sản phẩm
 function clearProductA(index){
     productA.splice(index,1)
@@ -47,6 +59,7 @@ function editProductA(index){
     productA[index] = editProductA;
     showProductA()
 }
+
 function sellProductA(index){
     let price = productA[index].getPriceA();
     let value = parseInt(document.getElementById("billA").value);

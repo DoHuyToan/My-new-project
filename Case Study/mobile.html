@@ -35,13 +35,13 @@
 <label for="Find"><input id="Find"></label>
 <button onclick="findProduct()">Tìm kiếm sản phẩm</button>
 <p id="result"></p>
-<br>
+</br>
 <table>
-    <input id="newName" placeholder="Tên sản phẩm mới">
-    <input id="newPrice" placeholder="Giá sản phẩm mới">
-    <input id="newDescription" placeholder="Mô tả sản phẩm mới">
+    <input oninput="checkAdd()" id="newName" placeholder="Tên sản phẩm mới">
+    <input oninput="checkAdd()" id="newPrice" placeholder="Giá sản phẩm mới">
+    <input oninput="checkAdd()" id="newDescription" placeholder="Mô tả sản phẩm mới">
     <input id="newPicture" placeholder="Hình ảnh sản phẩm mới">
-    <button onclick="addNemProduct()">Thêm điện thoại mới</button>
+    <button id="disabled" disabled onclick="addNemProduct()">Thêm điện thoại mới</button>
     <!--tên tiêu đề-->
     <tr>
         <th height="36" style="text-align:center"> Tên sản phẩm</th>

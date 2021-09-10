@@ -38,11 +38,11 @@
 <p id="resultA"></p>
 <br>
 <table>
-    <input id="newNameA" placeholder="Nhập tên phụ kiện mới">
-    <input id="newPriceA" placeholder="Nhập giá phụ kiện mới">
-    <input id="newDescriptionA" placeholder="Nhập mô tả phụ kiện mới">
+    <input oninput="checkAddA()" id="newNameA" placeholder="Nhập tên phụ kiện mới">
+    <input oninput="checkAddA()" id="newPriceA" placeholder="Nhập giá phụ kiện mới">
+    <input oninput="checkAddA()" id="newDescriptionA" placeholder="Nhập mô tả phụ kiện mới">
     <input id="newPictureA" placeholder="Nhập ảnh phụ kiện mới">
-    <button onclick="addNewProductA()">Thêm phụ kiện mới</button>
+    <button id="disableA" disabled onclick="addNewProductA()">Thêm phụ kiện mới</button>
     <br>
 <!--    tiêu đề-->
     <tr>
