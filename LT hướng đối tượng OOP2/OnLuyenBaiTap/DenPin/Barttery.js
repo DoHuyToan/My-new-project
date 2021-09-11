@@ -13,4 +13,4 @@ let Battery = function () {
             this.energy--;
         }
     }
-}
+};
