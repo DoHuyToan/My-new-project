@@ -24,3 +24,5 @@ class Human {
         }
     }
 }
+let adam = new Human("Adam",true,70)
+let eva = new Human("Eva",false,50)

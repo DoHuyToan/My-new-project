@@ -14,7 +14,6 @@ class Apple {
     checkStatus() {
         if (this.weight===0){
             return !this.status
-        }
     }
 }
-// let newApple = new Apple()
+let apple1 = new Apple()
