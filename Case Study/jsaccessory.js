@@ -59,13 +59,14 @@ function editProductA(index){
     productA[index] = editProductA;
     showProductA()
 }
-
+//bán hàng
 function sellProductA(index){
     let price = productA[index].getPriceA();
     let value = parseInt(document.getElementById("billA").value);
     let total = price + value;
     document.getElementById("billA").value = total;
 }
+//tìm kiếm
 function findProductA (){
     let findA = document.getElementById("FindA").value
     for(let i=0; i<productA.length; i++){
@@ -76,4 +77,18 @@ function findProductA (){
             document.getElementById("resultA").innerHTML = "Thông tin sản phẩm: " + "<br>"  +nameA+ " " +priceA+ " " +descriptionA
         }
     }
+    document.getElementById("FindA").value = ""
+}
+//sắp xếp theo giá
+function sortPriceA() {
+    for(let i=0; i<productA.length-1; i++){
+        for (let j=i+1; j<productA.length; j++){
+            if(productA[i].priceA>productA[j].priceA){
+                let temp = productA[i]
+                productA[i] = productA[j]
+                productA[j] = temp
+            }
+        }
+    }
+    showProductA()
 }

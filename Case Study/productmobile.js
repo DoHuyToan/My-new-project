@@ -7,8 +7,8 @@ class Product {
         this.description=_description
         this.picture=_picture
     }
-    //phương thức sp: lấy ra các giá trị của thuộc tính
-                   // gán lại(đổi) giá trị của thuộc tính
+    //phương thức sp: lấy ra các giá trị của thuộc tính: get
+                   // gán lại(đổi) giá trị của thuộc tính: set
     getName(){
         return this.name
     }

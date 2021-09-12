@@ -76,6 +76,19 @@ function findProduct (){
             document.getElementById("result").innerHTML = "Thông tin sản phẩm: " + "<br>" + name + " " + price + " " + description
         }
     }
+    document.getElementById("Find").value = ""
+}
+function sortPrice(){
+    for(let i=0; i<product.length-1; i++){
+        for(let j=i+1; j<product.length; j++){
+            if(product[i].price>product[j].price){
+                let temp = product[i]
+                product[i] = product[j]
+                product[j]=temp
+            }
+        }
+    }
+    showProducts()
 }
 
 
